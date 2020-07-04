@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  datasource:
+     username: root
+     password: 735139542
+     url: jdbc:mysql://123.56.164.172:3306/daoyun?characterEncoding=utf-8&serverTimezone=GMT%2B8
+     driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.enter.entity
+
+spring-security:
+  user:
+     name: ljh
+     password: 735139542
