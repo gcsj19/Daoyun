@@ -1,0 +1,81 @@
+
+// 公用样式
+@mainc: #00B7B8; //主色
+@textc: #464646; //字体颜色
+@textca: #909090; //字体颜色1
+@borderc: #eeeeee; //边框颜色
+@redc: #ec3851; //红色字体
+image {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.df {
+	display: flex;
+}
+
+
+page {
+	font-size: 24upx;
+	color: @textc;
+	line-height: 35upx;
+	padding-bottom: 60px;
+	background: #f7f7f7;
+	font-family:'微软雅黑', sans-serif, serif;
+}
+
+.bgja {
+	background-image: linear-gradient(to left, #00CEC1, #00B7B8);
+	background-image: -webkit-linear-gradient(to left, #00CEC1, #00B7B8);
+}
+
+
+
+
+
+.zdTabBar{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 20;
+	background: #ffffff;
+	.ul{
+		.df;
+		.li{
+			flex: 1;
+			padding-top: 5px;
+			position: relative;
+			.img{
+				width: 25px;
+				height: 25px;
+				overflow: hidden;
+				margin: 0 auto;
+			}
+			.ic{
+				width: 40px;
+				height: 40px;
+				.bgja;
+				border-radius: 50%;
+				text-align: center;
+				font-size: 20px;
+				line-height: 40px;
+				font-weight: bold;
+				color: #ffffff;
+				margin: -20px auto 5px;
+			}
+			.p{
+				margin-top: 2px;
+				text-align: center;
+				font-size: 10px;
+				line-height: 18px;
+			}
+			&.cur{
+				.p{
+					color: @redc;
+				}
+			}
+		}	
+	}
+}
